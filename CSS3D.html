@@ -1,0 +1,39 @@
+<style>
+	* {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+	body {
+		background-color: #000;
+		padding: 20px;
+	}
+</style>
+
+<link rel="stylesheet" type="text/css" href="Adobe.css">
+
+<div id="container">
+	<div id="logo">
+	  <div id="mask"></div>
+	  <div id="curve4" class="left"></div>
+	  <div id="curve3" class="left"></div>
+	  <div id="curve2" class="right"></div>
+	  <div id="curve1" class="right"></div>
+	  <div id="curve5"></div>
+	</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script>
+	$(document).ready(function(){
+		$('body').click(function(){
+			$(this).toggleClass('layered');
+		});
+	});
+	/*
+	https://codepen.io/curley/pen/XWmyeBK
+	
+	*/
+</script>
